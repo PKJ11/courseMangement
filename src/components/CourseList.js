@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCourses } from '../store/courseSlice';
 import { Link } from 'react-router-dom';
-import './CourseList.css'; // Assuming you create a CSS file for styling
+import './CourseList.css'; 
 
 const CourseList = () => {
   const dispatch = useDispatch();

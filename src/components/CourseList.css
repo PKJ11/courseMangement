@@ -1,238 +1,232 @@
 body {
-    background-color: #1c1c1e; /* Set background color to match LeetCode theme */
-    color: #ffffff; /* Set text color to white */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .course-list-container {
-    padding: 20px;
-    background-color: #1c1c1e; /* Dark background to match LeetCode theme */
-    color: white;
-    max-width: 1400px; /* Increased max width for the container */
-    margin: 25px auto; /* Center the container */
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .header h1 {
-    font-size: 36px; /* Increased font size */
-    font-weight: bold;
-    color: #ffffff;
-  }
-  
-  .header input {
-    padding: 12px; /* Increased padding */
-    font-size: 18px; /* Increased font size */
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .course-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px; /* Increased gap for better spacing */
-    justify-content: center; /* Center the course cards */
-  }
-  
+  background-color: #1c1c1e;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.course-list-container {
+  padding: 20px;
+  background-color: #1c1c1e;
+  color: white;
+  max-width: 1400px;
+  margin: 25px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.header input {
+  padding: 12px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.course-card {
+  background: #2c2c2e;
+  border: 1px solid #444;
+  border-radius: 8px;
+  width: calc(33% - 30px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-image-container {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.course-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-info {
+  padding: 15px;
+}
+
+.course-info h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.course-info p {
+  font-size: 16px;
+  color: #aaa;
+}
+
+.course-details-container {
+  max-width: 1400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1c1c1e;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-header {
+  margin-bottom: 20px;
+}
+
+.course-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.course-instructor {
+  font-size: 20px;
+  color: #bbb;
+}
+
+.course-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.course-sidebar {
+  flex: 1;
+  max-width: 400px;
+  padding: 20px;
+  background: #2c2c2e;
+  border-radius: 8px;
+}
+
+.course-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.course-info {
+  margin-top: 10px;
+}
+
+.enroll-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  font-size: 18px;
+  background-color: #ff5c5c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.enroll-button:hover {
+  background-color: #ff1c1c;
+}
+
+.student-list {
+  margin-top: 20px;
+}
+
+.student-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.student-list li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.course-details {
+  flex: 2;
+  padding: 20px;
+  background: #2c2c2e;
+  border-radius: 8px;
+}
+
+.syllabus-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.syllabus-item {
+  padding: 25px 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 5px;
+  position: relative;
+  font-size: 18px;
+}
+
+.dropdown-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+.syllabus-item p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
   .course-card {
-    background: #2c2c2e;
-    border: 1px solid #444;
-    border-radius: 8px;
-    width: calc(33% - 30px); /* Increased width of cards */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.2s;
+      width: calc(50% - 30px);
   }
-  
-  .course-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .course-image-container {
-    width: 100%;
-    height: 180px; /* Increased height of image container */
-    overflow: hidden;
-  }
-  
-  .course-thumbnail {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .course-info {
-    padding: 15px; /* Increased padding */
-  }
-  
-  .course-info h3 {
-    font-size: 20px; /* Increased font size */
-    margin: 10px 0;
-    color: #ffffff;
-  }
-  
-  .course-info p {
-    font-size: 16px; /* Increased font size */
-    color: #aaa;
-  }
-  
-  /* Additional styles for the course details page */
-  
-  .course-details-container {
-    max-width: 1400px; /* Increased max-width */
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #1c1c1e;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .course-header {
-    margin-bottom: 20px;
-  }
-  
-  .course-title {
-    font-size: 36px; /* Increased font size */
-    font-weight: bold;
-  }
-  
-  .course-instructor {
-    font-size: 20px; /* Increased font size */
-    color: #bbb;
-  }
-  
-  .course-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .course-sidebar {
-    flex: 1;
-    max-width: 400px; /* Increased max-width */
-    padding: 20px; /* Increased padding */
-    background: #2c2c2e;
-    border-radius: 8px;
-  }
-  
-  .course-thumbnail {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px; /* Increased margin-bottom */
-  }
-  
-  .course-info {
-    margin-top: 10px;
-  }
-  
-  .enroll-button {
-    display: block;
-    width: 100%;
-    padding: 15px; /* Increased padding */
-    margin-top: 15px; /* Increased margin-top */
-    font-size: 18px; /* Increased font size */
-    background-color: #ff5c5c;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
-  }
-  
-  .enroll-button:hover {
-    background-color: #ff1c1c;
-  }
-  
-  .student-list {
-    margin-top: 20px;
-  }
-  
-  .student-list ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .student-list li {
-    margin-bottom: 10px; /* Increased margin-bottom */
-    font-size: 18px; /* Increased font size */
-  }
-  
-  .course-details {
-    flex: 2;
-    padding: 20px; /* Increased padding */
-    background: #2c2c2e;
-    border-radius: 8px;
-  }
-  
-  .syllabus-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .syllabus-item {
-    padding: 25px 15px; /* Increased padding */
-    margin-bottom: 15px; /* Increased margin-bottom */
-    cursor: pointer;
-    border: 1px solid white; /* Add white border */
-    border-radius: 5px; /* Optional: Add border radius for a rounded look */
-    position: relative; /* Position relative for absolute positioning of the dropdown icon */
-    font-size: 18px; /* Increased font size */
-  }
-  
-  .dropdown-icon {
-    position: absolute;
-    top: 50%;
-    right: 15px; /* Adjusted right position */
-    transform: translateY(-50%);
-  }
-  
-  .syllabus-item p {
-    margin-top: 20px; /* Increased margin-top */
-    font-size: 18px; /* Increased font size */
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 1200px) {
-    .course-card {
-      width: calc(50% - 30px); /* Adjust width for medium screens */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .header {
+}
+
+@media (max-width: 768px) {
+  .header {
       flex-direction: column;
       align-items: flex-start;
-    }
-  
-    .header h1 {
-      font-size: 24px; /* Decreased font size */
-      margin-bottom: 10px;
-    }
-  
-    
-  
-    .course-card {
-      width: calc(100% - 30px); /* Adjust width for small screens */
-    }
-  
-    .course-content {
-      flex-direction: column;
-    }
-  
-    .course-sidebar {
-      max-width: 100%; /* Make sidebar full width */
-      margin-bottom: 20px;
-    }
-  
-    .course-details {
-      max-width: 100%; /* Make details full width */
-    }
   }
-  
+
+  .header h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+  }
+
+  .course-card {
+      width: calc(100% - 30px);
+  }
+
+  .course-content {
+      flex-direction: column;
+  }
+
+  .course-sidebar {
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .course-details {
+      max-width: 100%;
+  }
+}

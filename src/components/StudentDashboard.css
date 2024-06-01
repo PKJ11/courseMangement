@@ -1,7 +1,7 @@
 .dashboard {
   display: flex;
   padding: 20px;
-  max-width: 1600px; /* Increased max width for the container */
+  max-width: 1600px;
   margin: 0 auto;
 }
 @media (max-width: 1110px) {
@@ -14,11 +14,7 @@
   }
   
 }
-/* @media (max-width: 700px) {
-  .image-cards{
-    flex-direction: column;
-  }
-} */
+
 .sidebar {
   flex: 0 0 300px; 
   background-color: #2c2c2e;
@@ -29,8 +25,8 @@
 
 .main-content {
   flex: 1;
-  margin-left: 40px; /* Increased margin */
-  margin-right: 40px; /* Added right margin */
+  margin-left: 40px; 
+  margin-right: 40px; 
 }
 
 .chart-card {

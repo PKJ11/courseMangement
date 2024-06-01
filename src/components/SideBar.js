@@ -18,11 +18,11 @@ const Sidebar = (props) => {
                     const currentStudent = course.students[j];
                     if (currentStudent.id.toString() === id) {
                         student = currentStudent;
-                        break; // Stop further iteration once student is found
+                        break; 
                     }
                 }
                 if (student) {
-                    break; // Stop further iteration once student is found
+                    break; 
                 }
             }
             if (student) {

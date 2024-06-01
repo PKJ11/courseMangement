@@ -1,13 +1,10 @@
-// src/components/SplashScreen.js
 import React from 'react';
 import './SplashScreen.css';
 
-const SplashScreen = ({ visible }) => {
-  if (!visible) return null;
-
+const SplashScreen = () => {
   return (
     <div className="splash-screen">
-      <h1>Loading...</h1>
+      <h1 className="animate permanent-marker">Courify</h1>
     </div>
   );
 };

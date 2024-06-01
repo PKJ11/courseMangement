@@ -8,7 +8,7 @@ const ProgressImageCard = ({ course }) => {
 
   const handleMarkAsComplete = () => {
     if (isCompleted) {
-      setProgress(course.progress); // Set to original progress if undoing
+      setProgress(course.progress); 
       setIsCompleted(false);
     } else {
       setProgress(100);
