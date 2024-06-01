@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.navbar {
+    background-color: #1c1c1e;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 2rem;
+  }
+  .permanent-marker {
+    font-family: 'Permanent Marker', cursive;
+  }
+  .navbar-title {
+    font-size:2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+  }
+  

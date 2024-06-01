@@ -1,0 +1,54 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2c2c2e;
+    padding: 20px;
+    border-right: 1px solid #444;
+    border-radius: 10px;
+    color: #ffffff;
+    
+  }
+  
+  .username {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .userinfo {
+    margin-bottom: 5px;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .tag {
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .instructors {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .instructors-title {
+    margin-bottom: 10px;
+  }
+  
+  .instructor {
+    margin-bottom: 5px;
+  }
+  
+  .community-stats {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  

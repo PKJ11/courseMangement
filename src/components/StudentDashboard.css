@@ -1,0 +1,75 @@
+.dashboard {
+  display: flex;
+  padding: 20px;
+  max-width: 1600px; /* Increased max width for the container */
+  margin: 0 auto;
+}
+@media (max-width: 1110px) {
+  .dashboard{
+    flex-direction: column;
+    margin-top: 35px;
+  }
+  .chart-card {
+    margin-top: 35px;
+  }
+  
+}
+/* @media (max-width: 700px) {
+  .image-cards{
+    flex-direction: column;
+  }
+} */
+.sidebar {
+  flex: 0 0 300px; 
+  background-color: #2c2c2e;
+  padding: 20px;
+  border-right: 1px solid #444;
+  
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 40px; /* Increased margin */
+  margin-right: 40px; /* Added right margin */
+}
+
+.chart-card {
+  background-color: #1c1c1e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.course-list-card {
+  background-color: #1c1c1e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card-content {
+  padding: 20px;
+  color: #fff;
+}
+
+.card-title {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.course-progress {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.course-progress .MuiLinearProgress-root {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.image-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
