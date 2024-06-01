@@ -1,16 +1,27 @@
-import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
+import React, { useState ,useEffect} from 'react';
+import { useSelector,useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import { fetchCourses } from '../store/courseSlice';
 import './CourseDetails.css';
 
 const CourseDetails = () => {
+  const dispatch = useDispatch();
   const { id } = useParams();
-  const course = useSelector(state =>
-    state.courses.courses.find(course => course.id === parseInt(id))
-  );
+  
+  const courses = useSelector(state => state.courses.courses);
 
+  useEffect(() => {
+    dispatch(fetchCourses());
+  }, [dispatch]);
+
+
+  console.log(courses) ;
+  
+  
+  const course = courses.find(course => course.id === id);
+  
+  console.log(course)
   const [expandedWeeks, setExpandedWeeks] = useState({});
-
   const toggleWeek = (week) => {
     setExpandedWeeks(prevState => ({
       ...prevState,
